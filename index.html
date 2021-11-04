@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--Title-->
+    <title>Customer Bank Records</title>
+    <link rel="stylesheet" href="style.css">
+
+     <!-- CSS File-->
+</head>
+<body style="background-color: #BDEDFF">
+	<CENTER><h2>Customer Bank Records</h2></CENTER>
+    <!--Table-->
+    <table class="center">
+        <!--Row-1-->
+        <tr>
+            <!--Column-1-->
+            <td>
+                <!--Form-->
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                	<h3>Bank Account Information</h3>
+                  <!--div-1-->
+                    <div>
+                        <label>Full Name</label>
+                        <!--Validation Error-->
+                        <label class="validation-error hide" id="userNamevalidationError">This field is required</label>
+                        <!--Input User Name-->
+                        <input type="text" name="userName" id="userName" placeholder="Enter the Customer Name">
+                    </div>
+                    <!--div-2-->
+                    <div>
+                        <label>Bank Account Number</label>
+                        <!--Validation Error-->
+                        <label class="validation-error hide" id="accountNovalidationError" >This field is required</label>
+                        <!--Input Roll No-->
+                        <input type="number" name="accountNo" id="accountNo" placeholder="Enter the Bank account Number">
+                    </div>
+                    <!--div-3-->
+                    <div>
+                        <label>Address</label>
+                        <!--Validation Error-->
+                        <label class="validation-error hide" id="addressvalidationError">This field is required</label>
+                       <!--Input Student Class-->
+                        <input type="text" name="address" id="address" placeholder="Enter Customer Address">
+                    </div>
+                    <!--div-4-->
+                    <div>
+                        <label>Account Type</label>
+                        <!--Validation Error-->
+                        <label class="validation-error hide" id="accTypevalidationError">This field is required</label>
+                        <!--Input Total Subject-->
+                        <input type="text" name="accType" id="accType" placeholder="Enter Account type Saving,Current">
+                    </div>
+                    <!--div-5-->
+                    <div>
+                        <label>Adhar Card Number</label>
+                        <!--Validation Error-->
+                        <label class="validation-error hide" id="adharvalidationError">This field is required</label>
+                        <!--Input Age-->
+                        <input type="number" name="adhar" id="adhar" placeholder="Enter Adhar Card Number">
+                    </div>
+                    <!--div-6-->
+                    <div class="form-action-buttons">
+                        <!--Input Button-->
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <!--Column-2-->
+            <td>
+                <!--Nested Table-->
+                <table class="list" id="acclist" style="background-color: #f4f5ee;">
+                    <!--Table Head-->
+                    <thead>
+                        <!--Row-2-->
+                        <tr>
+                            <th>Full Name</th>
+                            <th> Bank Account Number</th>
+                            <th>Address</th>
+                            <th>Account Type</th>
+                            <th>Adhar card Number</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <!--Table Body-->
+                    <tbody>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    </body>
+    </html>
+        <script src="index.js"></script>
